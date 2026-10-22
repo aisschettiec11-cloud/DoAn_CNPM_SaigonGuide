@@ -1,0 +1,14 @@
+.git
+.local
+**/node_modules
+**/bin
+**/obj
+**/TestResults
+**/dist
+**/wwwroot
+**/test-results
+**/playwright-report
+.env*
+!*.example
+tests
+docs

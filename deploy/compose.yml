@@ -1,0 +1,66 @@
+name: saigonguide
+services:
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: saigon
+      POSTGRES_DB: saigonguide
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a database password in your private deployment environment}
+    volumes:
+      - database:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U saigon -d saigonguide]
+      interval: 5s
+      timeout: 5s
+      retries: 15
+    restart: unless-stopped
+  app:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: saigon-guide:local
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Production}
+      ConnectionStrings__Database: Host=db;Port=5432;Database=saigonguide;Username=saigon;Password=${POSTGRES_PASSWORD}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - 127.0.0.1:5088:8080
+    volumes:
+      - media:/data/media
+      - keys:/data/keys
+    restart: unless-stopped
+  bootstrap:
+    image: saigon-guide:local
+    profiles: [setup]
+    environment:
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Production}
+      ConnectionStrings__Database: Host=db;Port=5432;Database=saigonguide;Username=saigon;Password=${POSTGRES_PASSWORD}
+      SG_COMMAND: admin
+      Bootstrap__AdminEmail: ${ADMIN_EMAIL:-}
+      Bootstrap__AdminPassword: ${ADMIN_PASSWORD:-}
+    volumes:
+      - media:/data/media
+      - keys:/data/keys
+    depends_on:
+      db:
+        condition: service_healthy
+  caddy:
+    image: caddy:2
+    profiles: [public]
+    environment:
+      DOMAIN: ${DOMAIN:-localhost}
+    ports: ["80:80", "443:443", "443:443/udp"]
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [app]
+    restart: unless-stopped
+volumes:
+  database:
+  media:
+  keys:
+  caddy_data:
+  caddy_config:

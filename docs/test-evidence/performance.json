@@ -1,0 +1,23 @@
+{
+  "datasetEvents": 100000,
+  "sessions": 1000,
+  "concurrentClients": 20,
+  "durationSeconds": 300.0,
+  "logicalCPUs": 5,
+  "endpoints": {
+    "places": {
+      "requests": 750,
+      "p50Ms": 26.61,
+      "p95Ms": 61.94,
+      "maxMs": 196.23
+    },
+    "dashboard": {
+      "requests": 750,
+      "p50Ms": 422.93,
+      "p95Ms": 655.64,
+      "maxMs": 1207.51
+    }
+  },
+  "errors": [],
+  "source": "isolated synthetic benchmark; not real visitors"
+}

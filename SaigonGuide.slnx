@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/apps/" />
+  <Folder Name="/apps/api/">
+    <Project Path="apps/api/SaigonGuide.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SaigonGuide.Tests/SaigonGuide.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [{
+    "name": "Saigon Guide API + built React",
+    "type": "coreclr", "request": "launch",
+    "preLaunchTask": "Saigon Guide: build API",
+    "program": "${workspaceFolder}/apps/api/bin/Debug/net10.0/SaigonGuide.Api.dll",
+    "cwd": "${workspaceFolder}/apps/api",
+    "env": { "ASPNETCORE_ENVIRONMENT": "Development", "ASPNETCORE_URLS": "http://127.0.0.1:5080" },
+    "console": "integratedTerminal"
+  }]
+}

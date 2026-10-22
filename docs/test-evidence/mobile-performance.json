@@ -1,0 +1,14 @@
+{
+  "conditions": "390x844, cache cold, 150ms RTT, download1.6Mbps/upload750Kbps, CPU4x",
+  "metric": "navigation to six usable place cards; external map tiles excluded",
+  "samplesMs": [
+    1604,
+    1624,
+    1719,
+    1763,
+    2076
+  ],
+  "medianMs": 1719,
+  "targetMs": 3000,
+  "passed": true
+}

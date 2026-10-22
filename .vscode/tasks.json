@@ -1,0 +1,8 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Saigon Guide: setup", "type": "process", "command": "python3", "windows": { "command": "python" }, "args": ["scripts/local.py", "setup"], "problemMatcher": [] },
+    { "label": "Saigon Guide: build API", "type": "process", "command": "dotnet", "args": ["build", "apps/api", "--no-restore"], "problemMatcher": "$msCompile" },
+    { "label": "Saigon Guide: test", "type": "process", "command": "python3", "windows": { "command": "python" }, "args": ["scripts/local.py", "test"], "problemMatcher": [] }
+  ]
+}

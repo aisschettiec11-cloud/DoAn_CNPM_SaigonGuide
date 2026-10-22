@@ -1,0 +1,12 @@
+@SaigonGuide.Api_HostAddress = http://127.0.0.1:5080
+
+GET {{SaigonGuide.Api_HostAddress}}/health/ready
+Accept: application/json
+
+###
+GET {{SaigonGuide.Api_HostAddress}}/api/v1/places?language=vi
+Accept: application/json
+
+###
+GET {{SaigonGuide.Api_HostAddress}}/api/v1/places?language=en&q=palace
+Accept: application/json

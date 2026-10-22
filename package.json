@@ -1,0 +1,1 @@
+{"name":"saigon-guide","private":true,"scripts":{"dev":"npm --prefix apps/web run dev","build":"npm --prefix apps/web run build","test":"npm --prefix apps/web run test","e2e":"npm --prefix apps/web run e2e"}}

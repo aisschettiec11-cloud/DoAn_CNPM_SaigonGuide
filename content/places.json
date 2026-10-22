@@ -1,0 +1,236 @@
+[
+  {
+    "id": "47d60113-5198-56a0-a4e1-380feba4f11f",
+    "code": "dinh-doc-lap",
+    "latitude": 10.776944,
+    "longitude": 106.695278,
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Independence_Palace",
+        "title": "Independence Palace — Wikipedia",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu tọa độ tra cứu và các thông tin được nêu trong bài. Chưa kiểm tra GPS thực địa."
+      },
+      {
+        "url": "https://vietnam.travel/places-to-go/southern-vietnam/ho-chi-minh-city",
+        "title": "Vietnam Tourism — Ho Chi Minh City",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu các địa điểm du lịch trung tâm. Không dùng để khẳng định giờ mở cửa hoặc giá vé."
+      },
+      {
+        "url": "https://dinhdoclap.gov.vn/",
+        "title": "Hội trường Thống Nhất — Dinh Độc Lập",
+        "accessedOn": "2026-10-22",
+        "scope": "Trang đơn vị quản lý để khách kiểm tra thông tin tham quan hiện hành."
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "vi",
+        "name": "Dinh Độc Lập",
+        "address": "135 Nam Kỳ Khởi Nghĩa, TP. Hồ Chí Minh",
+        "shortDescription": "Một dấu mốc lịch sử giữa khoảng xanh trung tâm thành phố.",
+        "transcript": "Dinh Độc Lập là một di tích lịch sử ở trung tâm Thành phố Hồ Chí Minh. Công trình hiện nay do kiến trúc sư Ngô Viết Thụ thiết kế. Nơi đây từng là nơi ở và làm việc của Tổng thống Việt Nam Cộng hòa và gắn với sự kiện ngày 30 tháng 4 năm 1975. Ngày nay, công trình còn được biết đến với tên Hội trường Thống Nhất, phục vụ tham quan và các sự kiện. Khi khám phá, hãy dành thời gian quan sát kiến trúc, khoảng sân và không gian xanh quanh dinh. Thông tin vé, lối vào và khu vực được tham quan có thể thay đổi; hãy kiểm tra trực tiếp với đơn vị quản lý trước chuyến đi.",
+        "audioFile": "dinh-doc-lap-vi.mp3",
+        "durationSeconds": 39.445
+      },
+      {
+        "languageCode": "en",
+        "name": "Independence Palace",
+        "address": "135 Nam Ky Khoi Nghia, Ho Chi Minh City",
+        "shortDescription": "A landmark of history set in the green heart of the city.",
+        "transcript": "Independence Palace is a historic landmark in central Ho Chi Minh City. The present building was designed by Vietnamese architect Ngo Viet Thu. It served as the home and workplace of the president of South Vietnam and is closely associated with the events of 30 April 1975. Today it is also known as Reunification Hall and welcomes visitors as well as official events. Take time to observe its architecture and green surroundings. Admission arrangements and accessible rooms may change, so please consult the official venue before your visit.",
+        "audioFile": "dinh-doc-lap-en.mp3",
+        "durationSeconds": 39.628
+      }
+    ]
+  },
+  {
+    "id": "5d5e149e-2e4c-53ef-823b-8385132944f1",
+    "code": "nha-tho-duc-ba",
+    "latitude": 10.779722,
+    "longitude": 106.699167,
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Notre-Dame_Cathedral_Basilica_of_Saigon",
+        "title": "Notre-Dame Cathedral Basilica of Saigon — Wikipedia",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu tọa độ tra cứu và các thông tin được nêu trong bài. Chưa kiểm tra GPS thực địa."
+      },
+      {
+        "url": "https://vietnam.travel/places-to-go/southern-vietnam/ho-chi-minh-city",
+        "title": "Vietnam Tourism — Ho Chi Minh City",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu các địa điểm du lịch trung tâm. Không dùng để khẳng định giờ mở cửa hoặc giá vé."
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "vi",
+        "name": "Nhà thờ Đức Bà Sài Gòn",
+        "address": "Khu vực Công xã Paris, TP. Hồ Chí Minh",
+        "shortDescription": "Hai tháp chuông và kiến trúc gạch đỏ quen thuộc của Sài Gòn.",
+        "transcript": "Nhà thờ Đức Bà Sài Gòn là một nhà thờ chính tòa nằm trong khu vực trung tâm thành phố, gần Bưu điện Trung tâm. Công trình được xây dựng trong khoảng từ năm 1877 đến năm 1880 và nổi bật với hai tháp chuông cùng mặt ngoài bằng gạch đỏ. Khu vực phía trước nhà thờ là một điểm dừng để quan sát nhịp sống đô thị. Đây là một không gian tôn giáo đang hoạt động; hãy giữ yên lặng, ăn mặc phù hợp và tôn trọng hướng dẫn tại chỗ. Việc tu bổ hoặc hoạt động tôn giáo có thể ảnh hưởng đến quyền tiếp cận; ứng dụng không bảo đảm bạn có thể vào bên trong.",
+        "audioFile": "nha-tho-duc-ba-vi.mp3",
+        "durationSeconds": 37.355
+      },
+      {
+        "languageCode": "en",
+        "name": "Saigon Notre-Dame Cathedral",
+        "address": "Paris Commune Square area, Ho Chi Minh City",
+        "shortDescription": "Twin bell towers and a familiar red-brick city landmark.",
+        "transcript": "Saigon Notre-Dame Cathedral is a Catholic cathedral in the city centre, close to the Central Post Office. Built between 1877 and 1880, it is recognisable by its red-brick exterior and twin bell towers. Its forecourt offers a place to pause and observe the surrounding city. This is an active place of worship: please dress respectfully, keep noise low and follow local instructions. Restoration work or religious services may affect access. This guide does not guarantee entry to the interior.",
+        "audioFile": "nha-tho-duc-ba-en.mp3",
+        "durationSeconds": 37.982
+      }
+    ]
+  },
+  {
+    "id": "fb86ada6-3e3d-59aa-9036-a8caee9c736b",
+    "code": "buu-dien-trung-tam",
+    "latitude": 10.78,
+    "longitude": 106.7,
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Saigon_Central_Post_Office",
+        "title": "Saigon Central Post Office — Wikipedia",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu tọa độ tra cứu và các thông tin được nêu trong bài. Chưa kiểm tra GPS thực địa."
+      },
+      {
+        "url": "https://vietnam.travel/places-to-go/southern-vietnam/ho-chi-minh-city",
+        "title": "Vietnam Tourism — Ho Chi Minh City",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu các địa điểm du lịch trung tâm. Không dùng để khẳng định giờ mở cửa hoặc giá vé."
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "vi",
+        "name": "Bưu điện Trung tâm Sài Gòn",
+        "address": "Khu vực Công xã Paris, TP. Hồ Chí Minh",
+        "shortDescription": "Một công trình bưu chính với không gian kiến trúc giàu dấu ấn.",
+        "transcript": "Bưu điện Trung tâm Sài Gòn nằm gần Nhà thờ Đức Bà, trong khu vực Công xã Paris. Công trình được xây dựng vào cuối thế kỷ mười chín và hiện vẫn gắn với hoạt động bưu chính, đồng thời là điểm tham quan quen thuộc. Không gian bên trong có những bản đồ lịch sử và nhiều chi tiết kiến trúc đáng chú ý. Việc thiết kế công trình thường bị nhầm là của Gustave Eiffel; các tài liệu lịch sử được dẫn trong nguồn tham khảo ghi nhận vai trò của kiến trúc sư Alfred Foulhoux. Khi tham quan, hãy tôn trọng khu vực làm việc, không cản trở giao dịch và tuân theo chỉ dẫn của nhân viên.",
+        "audioFile": "buu-dien-trung-tam-vi.mp3",
+        "durationSeconds": 37.068
+      },
+      {
+        "languageCode": "en",
+        "name": "Saigon Central Post Office",
+        "address": "Paris Commune Square area, Ho Chi Minh City",
+        "shortDescription": "A working post office with distinctive historic architecture.",
+        "transcript": "Saigon Central Post Office stands near Notre-Dame Cathedral in the Paris Commune Square area. Built in the late nineteenth century, it remains associated with postal services while also welcoming visitors interested in its architecture. Historic maps and decorative details can be seen inside. The building is often incorrectly attributed to Gustave Eiffel; historical references cited by the source identify architect Alfred Foulhoux. Please respect the working areas, avoid obstructing customers and follow staff guidance.",
+        "audioFile": "buu-dien-trung-tam-en.mp3",
+        "durationSeconds": 36.101
+      }
+    ]
+  },
+  {
+    "id": "aab366d6-87bb-54db-b040-b018aeb0bdff",
+    "code": "cho-ben-thanh",
+    "latitude": 10.7725,
+    "longitude": 106.698056,
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/B%E1%BA%BFn_Th%C3%A0nh_Market",
+        "title": "Bến Thành Market — Wikipedia",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu tọa độ tra cứu và các thông tin được nêu trong bài. Chưa kiểm tra GPS thực địa."
+      },
+      {
+        "url": "https://vietnam.travel/places-to-go/southern-vietnam/ho-chi-minh-city",
+        "title": "Vietnam Tourism — Ho Chi Minh City",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu các địa điểm du lịch trung tâm. Không dùng để khẳng định giờ mở cửa hoặc giá vé."
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "vi",
+        "name": "Chợ Bến Thành",
+        "address": "Khu vực đường Lê Lợi, TP. Hồ Chí Minh",
+        "shortDescription": "Khám phá nhịp chợ, hương vị và những gian hàng đầy sắc màu.",
+        "transcript": "Chợ Bến Thành là một khu chợ nổi tiếng ở trung tâm Thành phố Hồ Chí Minh. Khu chợ có nhiều gian hàng thực phẩm, đồ dùng, quà lưu niệm và các mặt hàng khác. Lối vào phía nam hướng về khu vực đường Lê Lợi và quảng trường Quách Thị Trang. Đây là nơi phù hợp để quan sát hoạt động giao thương và tìm hiểu một phần nhịp sống thành phố. Hãy hỏi rõ giá, đơn vị tiền tệ và điều kiện mua hàng trước khi thanh toán; giữ tài sản cá nhân cẩn thận ở nơi đông người. Giờ hoạt động và bố trí lối đi có thể thay đổi, nên hãy kiểm tra thông tin tại chỗ.",
+        "audioFile": "cho-ben-thanh-vi.mp3",
+        "durationSeconds": 36.937
+      },
+      {
+        "languageCode": "en",
+        "name": "Ben Thanh Market",
+        "address": "Le Loi Street area, Ho Chi Minh City",
+        "shortDescription": "Explore local flavours, colourful stalls and market life.",
+        "transcript": "Ben Thanh Market is a well-known market in central Ho Chi Minh City. Its stalls offer food, everyday goods, souvenirs and many other products. The southern entrance faces the Le Loi Street and Quach Thi Trang Square area. Visiting the market is an opportunity to observe trading activity and a lively part of city life. Confirm prices, currency and purchase conditions before paying, and take care of personal belongings in crowded areas. Opening arrangements and access routes can change, so check information at the venue.",
+        "audioFile": "cho-ben-thanh-en.mp3",
+        "durationSeconds": 36.754
+      }
+    ]
+  },
+  {
+    "id": "6d44fb67-a931-559f-9a5c-da7304ab9fa9",
+    "code": "bao-tang-chung-tich-chien-tranh",
+    "latitude": 10.779444,
+    "longitude": 106.692222,
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/War_Remnants_Museum",
+        "title": "War Remnants Museum — Wikipedia",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu tọa độ tra cứu và các thông tin được nêu trong bài. Chưa kiểm tra GPS thực địa."
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "vi",
+        "name": "Bảo tàng Chứng tích Chiến tranh",
+        "address": "28 Võ Văn Tần, TP. Hồ Chí Minh",
+        "shortDescription": "Một không gian tìm hiểu lịch sử và suy ngẫm về hậu quả chiến tranh.",
+        "transcript": "Bảo tàng Chứng tích Chiến tranh nằm tại số 28 đường Võ Văn Tần, Thành phố Hồ Chí Minh. Bảo tàng giới thiệu tư liệu và hiện vật liên quan đến chiến tranh tại Việt Nam, trong đó có Chiến tranh Đông Dương và Chiến tranh Việt Nam. Các không gian trưng bày giúp khách tham quan tìm hiểu những tác động của chiến tranh đối với con người và xã hội. Một số hình ảnh có thể gây xúc động mạnh hoặc không phù hợp với trẻ nhỏ; hãy cân nhắc trước khi xem. Dành thời gian đọc chú thích, giữ thái độ tôn trọng và tuân theo quy định chụp ảnh, tham quan của bảo tàng.",
+        "audioFile": "bao-tang-chung-tich-chien-tranh-vi.mp3",
+        "durationSeconds": 35.788
+      },
+      {
+        "languageCode": "en",
+        "name": "War Remnants Museum",
+        "address": "28 Vo Van Tan, Ho Chi Minh City",
+        "shortDescription": "A place to learn about history and reflect on the effects of war.",
+        "transcript": "The War Remnants Museum is at 28 Vo Van Tan Street in Ho Chi Minh City. Its collections include documents and objects related to wars in Vietnam, including the First Indochina War and the Vietnam War. The displays invite visitors to consider the effects of conflict on people and society. Some images can be distressing and may not be suitable for young children. Take time to read the captions, approach the material respectfully and follow the museum rules on photography and access.",
+        "audioFile": "bao-tang-chung-tich-chien-tranh-en.mp3",
+        "durationSeconds": 35.5
+      }
+    ]
+  },
+  {
+    "id": "d9aab2e8-c69d-5243-80c8-565d27ede1ec",
+    "code": "pho-di-bo-nguyen-hue",
+    "latitude": 10.774167,
+    "longitude": 106.703611,
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Nguy%E1%BB%85n_Hu%E1%BB%87_Boulevard",
+        "title": "Nguyễn Huệ Boulevard — Wikipedia",
+        "accessedOn": "2026-10-22",
+        "scope": "Đối chiếu tọa độ tra cứu và các thông tin được nêu trong bài. Chưa kiểm tra GPS thực địa."
+      }
+    ],
+    "translations": [
+      {
+        "languageCode": "vi",
+        "name": "Phố đi bộ Nguyễn Huệ",
+        "address": "Đường Nguyễn Huệ, TP. Hồ Chí Minh",
+        "shortDescription": "Khoảng mở giữa lòng đô thị, nối trung tâm thành phố với bờ sông.",
+        "transcript": "Đường Nguyễn Huệ là một trục đường nổi tiếng ở trung tâm Thành phố Hồ Chí Minh. Tuyến đường kéo dài từ khu vực đường Lê Thánh Tôn trước trụ sở Ủy ban Nhân dân Thành phố đến đường Tôn Đức Thắng ở phía bờ sông Sài Gòn. Phần không gian đi bộ ở giữa tuyến đường được hoàn thành vào năm 2015. Đây là nơi nhiều người đến đi dạo, gặp gỡ và quan sát cảnh quan đô thị. Hãy chú ý giao thông ở các nút giao, theo hướng dẫn khi có sự kiện và giữ gìn vệ sinh chung. Điểm đánh dấu trên bản đồ chỉ đại diện một vị trí tham khảo trên tuyến phố, không phải toàn bộ khu vực đi bộ.",
+        "audioFile": "pho-di-bo-nguyen-hue-vi.mp3",
+        "durationSeconds": 38.348
+      },
+      {
+        "languageCode": "en",
+        "name": "Nguyen Hue Walking Street",
+        "address": "Nguyen Hue Boulevard, Ho Chi Minh City",
+        "shortDescription": "An open city space linking the civic centre and the riverfront.",
+        "transcript": "Nguyen Hue Boulevard is a prominent avenue in central Ho Chi Minh City. It stretches from Le Thanh Ton Street near City Hall towards Ton Duc Thang Street and the Saigon River waterfront. Its central pedestrian space was completed in 2015. People come here to stroll, meet friends and enjoy the urban setting. Take care at road crossings, follow event instructions and help keep the public space clean. The map marker represents one reference point along the boulevard, rather than the entire pedestrian area.",
+        "audioFile": "pho-di-bo-nguyen-hue-en.mp3",
+        "durationSeconds": 36.519
+      }
+    ]
+  }
+]

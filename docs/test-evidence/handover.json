@@ -1,0 +1,235 @@
+{
+  "checkedAtUtc": "2026-10-22T18:30:23.243184+00:00",
+  "runtime": {
+    "dotnetSdk": "10.0.402",
+    "node": "24.19.0",
+    "npm": "11.9.0",
+    "postgres": "17",
+    "vitest": "5.0.5"
+  },
+  "totals": {
+    "passed": 45,
+    "failed": 0,
+    "skipped": 0,
+    "blockedAutomated": 0
+  },
+  "backend": [
+    {
+      "name": "SaigonGuide.Tests.ApiTests.LockRevokesExistingUserSession",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.CalendarBucketsUseVietnameseTime",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.ConsentRequiredAndWithdrawalStopsEvents",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.LocaleRejectsUnsupported(s: \"\")",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.RejectsFutureAndReversedRanges",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.TranscriptChangesCannotKeepOutdatedPublishedAudio",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.MissingCsrfRejectedAndLogoutRevokesCopiedCookie",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.LocaleRejectsUnsupported(s: \"fr\")",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.TimezoneInclusiveRange",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.RetentionKeepsNinetyVietnameseCalendarDays",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.PasswordMinimum(s: \"\")",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.PasswordMinimum(s: \"short\")",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.InvalidEventShapeCannotInjectUnrelatedPlace",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.PublicSearchIgnoresVietnameseDiacritics",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.DashboardFixtureUsesDistinctVisitorsAndCohort",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.InvalidDashboardRangeRejected",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.AcceptedCompletionSurvivesExpiredStartCleanup",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.ConcurrentIdempotentEventsInsertOnlyOneRow",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.AccountDateFilterIsNotLimitedByAnalyticsRetention",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.MediaRejectsFakeMp3AndAcceptsDecodedFile",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.CompletionRequiresPlaybackDuration",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.SourcesRequireHttpsAndValidDate",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.EventDeduplicationAndNoGpsPayload",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.AnonymousAndUserCannotReadAdminAndCannotAssignRole",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.CrossLanguageAudioCannotBeAssignedAtDatabaseLevel",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.PublicContentHasSixPlacesCorrectLocaleAndPlayableAudio",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.PublishGateAndOptimisticConcurrencyAndHidden404",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.PublishRejectsMissingTranslationAudioAndDemoProduction",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.RulesTests.LocaleRejectsUnsupported(s: \"VI\")",
+      "outcome": "Passed"
+    },
+    {
+      "name": "SaigonGuide.Tests.ApiTests.CompletedWithoutStartOrElapsedTimeRejected",
+      "outcome": "Passed"
+    }
+  ],
+  "gps": [
+    {
+      "name": "calculates Haversine independently of language or GPS permission",
+      "outcome": "Passed"
+    },
+    {
+      "name": "rejects stale, imprecise, invalid and future samples",
+      "outcome": "Passed"
+    },
+    {
+      "name": "requires two valid fixes and does not repeat inside",
+      "outcome": "Passed"
+    },
+    {
+      "name": "resets candidates for stale fixes or intervals beyond 10 seconds",
+      "outcome": "Passed"
+    },
+    {
+      "name": "persists latch without storing coordinates",
+      "outcome": "Passed"
+    },
+    {
+      "name": "requires exit hysteresis and 120 seconds before rearm",
+      "outcome": "Passed"
+    },
+    {
+      "name": "selects one candidate deterministically and never interrupts a busy player",
+      "outcome": "Passed"
+    }
+  ],
+  "browser": [
+    {
+      "name": "Guest explores six bilingual landmarks without an account",
+      "outcome": "Passed"
+    },
+    {
+      "name": "GPS denial preserves manual reading and real audio playback",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Search empty state and tile failure keep the list usable",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Registration, own profile, User403 and logout",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Admin edits a landmark and reads real dashboard aggregates",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Mobile layout fits 390px with working navigation",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Desktop product screenshot",
+      "outcome": "Passed"
+    },
+    {
+      "name": "Consent records accepted views and playback, withdrawal stops collection",
+      "outcome": "Passed"
+    }
+  ],
+  "smoke": [
+    {
+      "port": 5080,
+      "health": "ready",
+      "places": 6,
+      "english": true,
+      "audioRange": 206,
+      "unaccentSearchCount": 1
+    },
+    {
+      "port": 5090,
+      "health": "ready",
+      "places": 6,
+      "english": true,
+      "audioRange": 206,
+      "unaccentSearchCount": 1
+    },
+    {
+      "port": 5088,
+      "health": "ready",
+      "places": 6,
+      "english": true,
+      "audioRange": 206,
+      "unaccentSearchCount": 1
+    }
+  ],
+  "limitations": [
+    "No Windows/macOS IDE GUI execution",
+    "No field GPS or physical mobile devices",
+    "No staging/production or public TLS",
+    "Previous benchmarks not rerun; see dated evidence",
+    "Local Docker running image predates desktop-helper changes; native API is current source"
+  ]
+}

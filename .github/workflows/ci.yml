@@ -1,0 +1,80 @@
+name: Build and test
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, 'delivery/**']
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_USER: saigon
+          POSTGRES_PASSWORD: ci-isolated-test-only
+          POSTGRES_DB: saigonguide_test
+        ports: [5432:5432]
+        options: >-
+          --health-cmd "pg_isready -U saigon"
+          --health-interval 5s --health-timeout 5s --health-retries 15
+    env:
+      ConnectionStrings__Database: Host=127.0.0.1;Port=5432;Database=saigonguide_test;Username=saigon;Password=ci-isolated-test-only
+      SG_TEST_DB: Host=127.0.0.1;Port=5432;Database=saigonguide_test;Username=saigon;Password=ci-isolated-test-only
+      DOTNET_CLI_TELEMETRY_OPTOUT: 1
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
+      - run: npm ci --prefix apps/web
+      - run: npm --prefix apps/web test
+      - run: npm --prefix apps/web run build
+      - run: dotnet restore SaigonGuide.slnx --locked-mode
+      - name: Install media validation tools
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+      - run: dotnet test SaigonGuide.slnx --no-restore --logger trx
+      - name: Build production API with frontend
+        run: |
+          cp -r apps/web/dist apps/api/wwwroot
+          dotnet publish apps/api -c Release --no-restore -o .local/publish
+      - name: Install browser
+        run: npx --prefix apps/web playwright install --with-deps chromium
+      - name: Seed isolated browser test instance
+        run: |
+          mkdir -p .local
+          python3 - <<'PY'
+          import os,secrets
+          from pathlib import Path
+          p=Path('.local/bootstrap.env')
+          p.write_text('Bootstrap__AdminEmail=ci-admin@example.com\nBootstrap__AdminPassword='+secrets.token_urlsafe(24)+'\n')
+          PY
+          export Bootstrap__AdminEmail=$(sed -n 's/^Bootstrap__AdminEmail=//p' .local/bootstrap.env)
+          export Bootstrap__AdminPassword=$(sed -n 's/^Bootstrap__AdminPassword=//p' .local/bootstrap.env)
+          export Media__Path=$PWD/.local/media
+          export Keys__Path=$PWD/.local/keys
+          export Content__Path=$PWD/content
+          export ASPNETCORE_ENVIRONMENT=Testing
+          SG_COMMAND=seed dotnet run --project apps/api --no-build --no-launch-profile
+          SG_COMMAND=admin dotnet run --project apps/api --no-build --no-launch-profile
+          ASPNETCORE_URLS=http://127.0.0.1:5080 dotnet run --project apps/api --no-build --no-launch-profile > .local/api.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:5080/health/ready && break; sleep 1; done
+      - name: Browser end-to-end
+        run: npm --prefix apps/web run e2e
+        env:
+          PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH: managed
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-evidence
+          path: |
+            tests/**/TestResults/*.trx
+            apps/web/playwright-report
+            apps/web/test-results
