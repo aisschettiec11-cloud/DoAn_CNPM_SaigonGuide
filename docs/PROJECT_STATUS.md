@@ -26,6 +26,7 @@ Bảng51FR và các nhánh chưa nghiệm thu tại [PRD](PRD.md); không tuyên
 - Bổ sung Python desktop setup/start/dev/test, private config chỉ đọc trong Development; môi trường/command-line vẫn ưu tiên.
 - Thống nhất launch profile5080, thêm VS Code tasks/launch/extensions; ignore cache/IDE/private output.
 - Chạy lại setup/build/release publish,45tests, dependency audits, profile smoke và backup/restore.
+- Clone thật từ GitHub vào thư mục sạch: đủ12MP3/tài liệu, không có config private; locked restore/frontend/backend build đạt.
 - Bổ sung CI chạy trên branch delivery; kết quả CI remote cần kiểm độc lập.
 
 ## Tài liệu bàn giao
@@ -38,7 +39,9 @@ Bảng51FR và các nhánh chưa nghiệm thu tại [PRD](PRD.md); không tuyên
 
 Repository đích: https://github.com/aisschettiec11-cloud/DoAn_CNPM_SaigonGuide
 
-Branch bàn giao: `delivery/saigon-guide`, dựa trên main `aaf51ac9bc082c0c5c0eea6d7c4c1200644b573b`. Commit bàn giao và kết quả push được cập nhật sau xác minh remote. Hiện tại: đang chuẩn bị commit; chưa tuyên bố đã push. Main được giữ nguyên để nhóm review/merge branch. Không đổi visibility repository.
+Branch bàn giao: `delivery/saigon-guide`, dựa trên main `aaf51ac9bc082c0c5c0eea6d7c4c1200644b573b`. Commit source bàn giao: [`5ca8fc39cc36d305103332d15e9b7ed91be8502b`](https://github.com/aisschettiec11-cloud/DoAn_CNPM_SaigonGuide/commit/5ca8fc39cc36d305103332d15e9b7ed91be8502b). **Đã push thành công**, xác minh `git ls-remote origin refs/heads/delivery/saigon-guide` trả đúng SHA trên; working tree sạch sau commit. Commit tài liệu xác minh tiếp theo có thể nằm trên source commit này; lấy HEAD hiện tại bằng `git rev-parse HEAD`. Main được giữ nguyên để nhóm review/merge branch. Không đổi visibility repository.
+
+CI đã thực sự khởi chạy trên GitHub cho source commit: [Actions run39832146851](https://github.com/aisschettiec11-cloud/DoAn_CNPM_SaigonGuide/actions/runs/39832146851). Trạng thái khi ghi mục này: **IN_PROGRESS**, đang cài công cụ media; chưa kết luận PASS/FAIL. Lượt CI được để tiếp tục trên GitHub. Commit tiếp theo chỉ cập nhật tài liệu/bằng chứng, dùng `[skip ci]` để tránh chạy lại cùng code không đổi; không bỏ qua test code đã chạy. Kiểm kết quả cuối ở link run trên.
 
 ## Bước tiếp theo và tồn đọng
 

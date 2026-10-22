@@ -231,5 +231,22 @@
     "No staging/production or public TLS",
     "Previous benchmarks not rerun; see dated evidence",
     "Local Docker running image predates desktop-helper changes; native API is current source"
-  ]
+  ],
+  "freshGithubClone": {
+    "sourceCommit": "5ca8fc39cc36d305103332d15e9b7ed91be8502b",
+    "privateConfigAbsent": true,
+    "audioFiles": 12,
+    "dotnetLockedRestoreBuild": "PASS",
+    "npmCiTypecheckBuild": "PASS",
+    "note": "Fresh checkout from GitHub in /tmp; reused verified dependency caches, no desktop GUI claim."
+  },
+  "githubActions": {
+    "conclusion": null,
+    "head_sha": "5ca8fc39cc36d305103332d15e9b7ed91be8502b",
+    "html_url": "https://github.com/aisschettiec11-cloud/DoAn_CNPM_SaigonGuide/actions/runs/39832146851",
+    "id": 39832146851,
+    "status": "in_progress",
+    "updated_at": "2026-10-22T18:31:28Z",
+    "observedAtUtc": "2026-10-22T18:38:34.797899+00:00"
+  }
 }

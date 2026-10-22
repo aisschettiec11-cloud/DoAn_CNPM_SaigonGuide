@@ -19,6 +19,7 @@ Linux x64 cloud, Node24.19.0/npm11.9.0, .NET SDK10.0.402/runtime10.0.13, Postgre
 | `python3 scripts/env.py dotnet publish apps/api -c Release --no-restore -o .local/handover-publish` | PASS |
 | `npm --prefix apps/web audit --audit-level=high` | PASS:0vulnerabilities tại lần kiểm |
 | `python3 scripts/env.py dotnet list apps/api/SaigonGuide.Api.csproj package --vulnerable --include-transitive` | PASS: nguồn advisory không báo vulnerable |
+| Fresh clone GitHub source commit5ca8fc3: frozen npm/dotnet restore + frontend/backend build | PASS:12MP3/tài liệu đầy đủ, không có .local/secrets; dùng cache dependency đã xác minh |
 | `python3 -m py_compile scripts/local.py` | PASS: syntax helper |
 | Profile `http` với override cổng kiểm5090, không truyền DB env | PASS: Development đọc ide-settings.json, readiness/6điểm/EN/MP3Range206/search không dấu |
 | Native5080 và Docker5088 | PASS: cùng smoke như trên; image Docker có sẵn chưa rebuild thay đổi desktop-helper lần này |
@@ -113,6 +114,6 @@ Browser thật trong cloud đã kiểm6điểm/VI–EN, denyGPS+MP3, map tiles/l
 | Mọi TC-nn của baseline, mọi nhánh autoplay/lỗi audio/account/UI | Chưa tự động hóa đầy đủ; xem FR PARTIAL trong PRD |
 | Nội dung và chất lượng12giọng đọc | Có nguồn/audio, chưa có nghiệm thu biên tập/nghe bởi nhóm |
 | Backup scheduler/rotation và outbound tile trên host tương lai | Chưa cấu hình/kiểm ở production |
-| GitHub Actions | Xem trạng thái riêng tại PROJECT_STATUS; local PASS không tương đương CI GitHub PASS |
+| GitHub Actions | Run39832146851: in_progress / chưa kết luận; xem PROJECT_STATUS. Local PASS không tương đương remote PASS |
 
 Không có lỗi FAIL còn tái hiện trong45case hiện hành. Điều này không phải cam kết không còn bug hoặc đủ mọi acceptance criteria. Chưa nghiệm thu phát hành Internet.

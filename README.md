@@ -64,7 +64,7 @@ Browser tests: `SG_WEB_URL=http://127.0.0.1:5081 npm --prefix apps/web run e2e` 
 
 ## Triển khai và vận hành
 
-[Hướng dẫn Docker/HTTPS/backup/restore](docs/Trien-khai-va-van-hanh.md). Chưa có hosting/tên miền từ người dùng nên chưa có website public. Không có deploy tự động tới tài khoản bên ngoài hoặc secrets hardcode. CI GitHub Actions được cấu hình cho push/PR main; chỉ được gọi là đã chạy trên GitHub sau khi có run thật.
+[Hướng dẫn Docker/HTTPS/backup/restore](docs/Trien-khai-va-van-hanh.md). Chưa có hosting/tên miền từ người dùng nên chưa có website public. Không có deploy tự động tới tài khoản bên ngoài hoặc secrets hardcode. CI GitHub Actions chạy cho push/PR main và push nhánh delivery; kết quả run thật được ghi tại [PROJECT_STATUS](docs/PROJECT_STATUS.md), không suy ra từ local tests.
 
 ## Bộ tài liệu bàn giao
 
